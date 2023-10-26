@@ -1,3 +1,37 @@
+sing namespace std
+we get input by cin and output by cout
+getline(cin,string variable)
+int arr [10]
+cin>>arr[0]>>arr[1]>>arr[2]
+arr[3] = 5
+int arr[3][5] which means 3 rows and 5 columns
+int len = s.size()
+s[2] = 'and'
+endl or \n for next line
+4 types of function -   void
+                        return- int sum = sum(num1,num2)
+                        paramaterised
+                        non paramaterised
+pass by value means you send copy and not the actual value
+pass by reference means you send the location, can do it by sum(int &a), you always send array by pass by reference
+Time complexity != time taken, rather rate at which the time taken increases with respect to the input size
+Represented by big oh, O()
+For calculating time complexity - Calculate in terms of worst case scenario, avoid constants, avoid lower values
+Three cases - worst case, average case, best case
+(int)log10(n) +1 - this will give you the digits of a number
+If number of times the loop running depends on the number getting divided till it becomes 0 then time complexity will be O(log n), base will be the number dividing. ex- if n/5 so O(log 5 (n)). so time complexity for counting the digits of a number using dividing method will be O(log 10 n)
+for finding divisors of a number of a number n, sqrt(n) will give us the number above which the number starts repeating itself.
+Space Complexity - Input Space + Auxillary Space
+Auxillary Space- Space that you take to solve the problem. Input Space- Space that you take to store the problem.
+1s ~ 10^8 Operations, 2s ~ 2*10^8
+When a function calls itself un til a specific condition is met
+Infiinite recursions end up causing stack overflow
+In parametarised (2 or more variables) functions return statement is in only in 'if block' but in functions (1 variable) return is in both if block and else block for recursion questions.
+if array local then max length is 10^6 but if global variable array then length is 10^7
+Operating Systems, Networking, IP stack, Storage, Databases, prpgramming Lang, Debugging, git, automation tools, scripting language, basics of cloud, qwicklabs,certificates. 
+
+
+
 use pairs if you want to store two variables in a variable
 pait<int,int> p = {1,3} -  stores 1 and 3 in p,can use any data type
 p.first/p.second- gives 1st and 2nd element of the pair
