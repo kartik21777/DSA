@@ -65,3 +65,52 @@ vector<int>k(2,50)
 v.insert(v.begin(),k.begin(),k.end())- v vector becomes {50,50,300,6,6,6,300}
 v1-{10,20} and v2-{50,60}, then v1.swap(v2) - then v1 becomes -{50,60} and v2 becomes -{10,20}
 v.empty()- if v has even one element then false else true
+list is a dynamic container, same as vector but also gives front Operations
+list<int> ls- for initialising
+ls.push_front(5) - {5}
+ls.emplace_front(2)- {2,5}
+rest functions same as vectors
+deque<int>deque
+rest functions same as list and vector including front Operations
+Stack is last in first out (LIFO)
+stack<int>st - initialises a stack
+st.push(1) - {1}
+st.pushes(2) - {2,1}
+st.pushes(3) - {3,2,1}
+st.top()- prints 3
+st.pop()- {2,1}
+stack<int>st1,st2
+st1.swap(st2)
+all functions T.C is O(n)
+Queue is FIFO(first in first out)
+queue<int>q - initialises a stack
+q.push(1) - {1}
+q.pushes(2) - {1,2}
+q.pushes(3) - {1,2,3}
+q.back()- prints 3
+q.front() - prints 1
+q.pop()- {2,3}
+all functions similar to stack
+in priority queue the one with the largest value or smallest stays at the top
+priority_queue<int>pq- max priority queue/max heap
+priority_queue<int,vector<int>,greater<int>>pq- for min priority queue/min heap
+for priority queue- push and pop- O(log n) and top- O(n)
+Set-Stores everything in a sorted manner and every number is unique
+set<int>st- for initialising set
+set.insert(1)-{1}
+set.emplace(2)-{1,2}
+set.insert(1)-{1,2}- every number has to be unique
+set.insert(3)-{1,2,3}
+set.insert(4)-{1,2,3,4}
+Funtionality of insert can be used in vectors, that increases the efficiency
+begin(),rbegin(),rend(),swap(),empty(),end(),size()- are same as before
+{1,2,3,4}
+auto it = set.find(3)- returns an iterator pointing towards the number 3 in set
+auto it = set.find(5)- returns an iterator pointing towards st.end() as no 5 in set
+st.count(n)- if n exists in set then it returns 1 as every element is unique, if it doesn't then it returns 0
+erase functions works same as vector, give this function number or the iterator
+everything in set is in O(log n)
+multiset<int>ms - stores everything in sorted order but the numbers are not unique
+{1,1,1}
+if you want to delete only the 1st end give erase() iterator poinitng towards 1
+everything same as set
